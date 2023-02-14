@@ -104,4 +104,6 @@ $(document).ready(function() {
         $('#nth-text').text(nth);
         $('#g-series').text(series);
     });
+
+    // Happy valentines
 });
