@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  overflow-y: hidden;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100 !important;
+}
+
+.header {
+  text-align: center;
+  padding: 1.3em;
+  background: #39A2DB;
+  letter-spacing: 2px;
+}
+
+.main {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.main .left-container {
+  color: #fff;
+  width: 20%;
+  padding: 0.8em 0;
+  background: #053742;
+}
+.main .topics-container {
+  width: 80%;
+  margin: 0 auto;
+  margin: 0.5em auto;
+}
+.main .right-container {
+  width: 80%;
+  line-height: 1.7em;
+  padding: 1.5rem 3em;
+  text-align: justify;
+}
+
+.topics-container ul {
+  list-style-position: inside;
+}
+.topics-container ul li {
+  padding: 0.4em;
+}
+.topics-container ul li:hover {
+  background: red;
+  border-radius: 2px;
+}
+
+.left-container .l-t {
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.right-content .w-title {
+  margin: 1rem 0;
+}
+.right-content p {
+  font-size: 1.2rem;
+  text-indent: 3rem;
+}
+
+.calc-content {
+  margin: 2rem 0;
+}
+.calc-content input[type^=t] {
+  font-size: 1.5rem;
+  height: 40px;
+  width: 300px;
+  padding: 0.5rem;
+}
+.calc-content input:nth-child(1) {
+  margin-right: 5em;
+}
+.calc-content input:nth-child(3) {
+  margin: 1rem 0;
+  display: block;
+}
+.calc-content .calculate {
+  display: block;
+  margin: 1rem 0;
+  padding: 0.8rem;
+  width: 185px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.calc-content .calc-box {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid #000;
+  padding: 1.5rem;
+}
+.calc-content .calc-box .input-boxes label {
+  text-align: center;
+}
+.calc-content .calc-box .output {
+  text-align: center;
+  width: 100%;
+  padding: 1rem;
+}
+.calc-content .nth-output .nth-text {
+  font-size: 5rem;
+}
+.calc-content .series-output, .calc-content .g-series {
+  padding: 1.5rem 0;
+}
+.calc-content .series-output .g-series b {
+  font-size: 3rem;
+}
+
+.input-container {
+  display: flex;
+  width: 500px;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+.input-container .input-label {
+  display: block;
+  color: #fff;
+  width: 185px;
+  padding: 0.45em;
+  font-size: 1.2rem;
+  background: #39A2DB;
+}
+.input-container input {
+  border: none;
+  position: relative;
+  left: -0.5px;
+}
+.input-container input:focus {
+  outline: none;
+}
+
+#window1,
+#window2,
+#window3,
+#window4,
+#window5,
+#window6,
+#window7,
+#window8,
+#window9,
+#window10,
+#window11,
+#window12,
+#window13,
+#window14,
+#window15 {
+  display: none;
+}/*# sourceMappingURL=style.css.map */
