@@ -46,6 +46,33 @@ function geometric(a, r, n) {
     return [a * Math.pow(r, n-1), series_out]
 }
 
+// Arithmetic Sequence
+function arithmetic(a, d, n) {
+    let series_out = "";
+    let temp_a = a;
+    if (n > 5) {
+        for(let b = 0; b < 5; b++) {
+            if (b < n-1) {
+                series_out += `${temp_a}, `
+            } else {
+                series_out += `${temp_a}`
+            }
+            temp_a += d;
+        }
+        series_out += "..."
+    } else  {
+        for(let b = 0; b < n; b++) {
+            if (b < n-1) {
+                series_out += `${temp_a}, `
+            } else {
+                series_out += `${temp_a}`
+            }
+            temp_a += d;
+        }
+    }
+    return [ a + (n-1)*d, series_out]
+}
+
 // Closes all the windows
 function closeAll() {
     let topic_windows = [
@@ -103,5 +130,11 @@ $(document).ready(function() {
         let [nth, series] = geometric(Number($('#geometric-a').val()), Number($('#geometric-r').val()), Number($("#geometric-n").val()));
         $('#nth-text').text(nth);
         $('#g-series').text(series);
+    });
+    // Arithmetic Calculate Event
+    $('#arithmetic-c').click(() => {
+        let [nth, series] = arithmetic(Number($('#arithmetic-a').val()), Number($('#arithmetic-r').val()), Number($("#arithmetic-n").val()));
+        $('#anth-text').text(nth);
+        $('#a-series').text(series);
     });
 });
