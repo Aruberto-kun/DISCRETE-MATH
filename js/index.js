@@ -50,8 +50,8 @@ function geometric(a, r, n) {
 function arithmetic(a, d, n) {
     let series_out = "";
     let temp_a = a;
-    if (n > 5) {
-        for(let b = 0; b < 5; b++) {
+    if (n > 15) {
+        for(let b = 0; b < 15; b++) {
             if (b < n-1) {
                 series_out += `${temp_a}, `
             } else {
@@ -72,6 +72,8 @@ function arithmetic(a, d, n) {
     }
     return [ a + (n-1)*d, series_out]
 }
+//Truth Table
+
 
 // Closes all the windows
 function closeAll() {
