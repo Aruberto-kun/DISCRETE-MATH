@@ -75,6 +75,14 @@ function arithmetic(a, d, n) {
 //Truth Table
 
 
+// Recursive Algorithm
+function recursiveAlgorithm(num) {
+    if (num === 1)
+        return 1;
+    else
+        return num * factorial(num - 1);
+}
+
 // Closes all the windows
 function closeAll() {
     let topic_windows = [
@@ -138,5 +146,10 @@ $(document).ready(function() {
         let [nth, series] = arithmetic(Number($('#arithmetic-a').val()), Number($('#arithmetic-r').val()), Number($("#arithmetic-n").val()));
         $('#anth-text').text(nth);
         $('#a-series').text(series);
+    });
+
+    // Recursive Calculate Event
+    $('#factorial-rc').click(() => {
+        $('#factorial-r').val(recursiveAlgorithm($('#factorial-ri').val()));
     });
 });

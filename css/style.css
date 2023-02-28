@@ -104,13 +104,13 @@ body {
   width: 100%;
   padding: 1rem;
 }
-.calc-content .nth-output .nth-text {
-  font-size: 5rem;
+.calc-content .nth-output .nth-text, .calc-content .nth-output .anth-text {
+  font-size: 4rem;
 }
-.calc-content .series-output, .calc-content .g-series {
+.calc-content .series-output, .calc-content .g-serie {
   padding: 1.5rem 0;
 }
-.calc-content .series-output .g-series b {
+.calc-content .series-output .g-series b, .calc-content .series-output .a-series b {
   font-size: 3rem;
 }
 
@@ -153,4 +153,61 @@ body {
 #window14,
 #window15 {
   display: none;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.table-c {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+.table-c h1 {
+  padding: 1rem 0 0;
+}
+
+.table-c .table-left {
+  width: 48%;
+}
+.table-c .table-left table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.5rem 0;
+  border: 1px solid #000;
+}
+.table-c .table-left table td, .table-c .table-left table th {
+  text-align: center;
+  border: 1px solid #000;
+}
+.table-c .table-left table tbody tr:nth-child(odd) {
+  background-color: #39A2DB;
+}
+
+.table-c .table-right {
+  width: 48%;
+}
+.table-c .table-right table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.5rem 0;
+  border: 1px solid #000;
+}
+.table-c .table-right table td, .table-c .table-right table th {
+  text-align: center;
+  border: 1px solid #000;
+}
+.table-c .table-right table tbody tr:nth-child(odd) {
+  background-color: #39A2DB;
+}
+
+.table-n table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.5rem 0;
+  border: 1px solid #000;
+}
+.table-n table td, .table-n table th {
+  text-align: center;
+  border: 1px solid #000;
+}
+.table-n table tbody tr:nth-child(odd) {
+  background-color: #39A2DB;
+}

@@ -103,9 +103,96 @@
             <div class="right-content" id="window5">
                 <h2 class="w-title">Truth Table</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam corporis, hic sapiente incidunt tempore aspernatur labore tenetur suscipit unde provident impedit debitis excepturi! Doloribus unde eum dolores perspiciatis ab est necessitatibus consequatur, ullam iure sunt laborum veritatis magnam voluptatem dolor. Perferendis dolore dignissimos ex optio nihil, reprehenderit facilis fuga dolores.</p>
-                <div class="calc-content">
-                    <input type="text" id="user-input" placeholder="Enter a number"> <input type="text" name="" id="output" placeholder="Output">
-                    <button id="calculate">Calculate</button>
+                <div class="table-c">
+                    <div class="table-left">
+                        <h1>Disjunction</h1>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>A</th>
+                                    <th>B</th>
+                                    <th>A /\ B</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>True</td>
+                                    <td>False</td>
+                                    <td>False</td>
+                                </tr>
+                                <tr>
+                                    <td>True</td>
+                                    <td>False</td>
+                                    <td>False</td>
+                                </tr>
+                                <tr>
+                                    <td>True</td>
+                                    <td>False</td>
+                                    <td>False</td>
+                                </tr>
+                                <tr>
+                                    <td>True</td>
+                                    <td>False</td>
+                                    <td>False</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table-right">
+                        <h1>Conjunction</h1>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>A</th>
+                                <th>B</th>
+                                <th>A /\ B</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>True</td>
+                                <td>False</td>
+                                <td>False</td>
+                            </tr>
+                            <tr>
+                                <td>True</td>
+                                <td>False</td>
+                                <td>False</td>
+                            </tr>
+                            <tr>
+                                <td>True</td>
+                                <td>False</td>
+                                <td>False</td>
+                            </tr>
+                            <tr>
+                                <td>True</td>
+                                <td>False</td>
+                                <td>False</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                </div>
+                <div class="table-n">
+                    <h1>Negation</h1>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>A</th>
+                                <th>~A</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>True</td>
+                                <td>False</td>
+                            </tr>
+                            <tr>
+                                <td>False</td>
+                                <td>True</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
             <div class="right-content" id="window6">
@@ -220,8 +307,16 @@
                 <h2 class="w-title">Recursive Algorithm</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam corporis, hic sapiente incidunt tempore aspernatur labore tenetur suscipit unde provident impedit debitis excepturi! Doloribus unde eum dolores perspiciatis ab est necessitatibus consequatur, ullam iure sunt laborum veritatis magnam voluptatem dolor. Perferendis dolore dignissimos ex optio nihil, reprehenderit facilis fuga dolores.</p>
                 <div class="calc-content">
-                    <input type="text" id="user-input" placeholder="Enter a number"> <input type="text" name="" id="output" placeholder="Output">
-                    <button id="calculate">Calculate</button>
+                    <div class="input-container">
+                        <label class="input-label" for="factorial-ri"><b>Factorial Number</b></label>
+                        <input type="text" name="factorial-ri" id="factorial-ri">
+                    </div>
+                    <br>
+                    <div class="input-container">
+                        <label class="input-label" for="factorial-r"><b>Output</b></label>
+                        <input type="text" name="factorial-r" id="factorial-r">
+                    </div>
+                    <button class="calculate" id="factorial-rc">Calculate</button>
                 </div>
             </div>
             <div class="right-content" id="window14">

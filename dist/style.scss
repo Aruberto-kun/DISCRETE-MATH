@@ -118,15 +118,15 @@ body {
         padding: 1rem;
     }
 
-    .nth-output .nth-text {
-        font-size: 5rem;
+    .nth-output .nth-text, .nth-output .anth-text{
+        font-size: 4rem;
     }
 
-    .series-output, .g-series {
+    .series-output, .g-serie{
         padding: 1.5rem 0;
     }
 
-    .series-output .g-series b {
+    .series-output .g-series b, .series-output .a-series b{
         font-size: 3rem;
     }
 
@@ -177,4 +177,69 @@ body {
 #window14,
 #window15 {
     display: none;
+}
+
+.table-c {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+    h1 {
+        padding: 1rem 0 0;
+    }
+}
+
+.table-c .table-left {
+    width: 48%;
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: .5rem 0;
+        border: 1px solid #000;
+    }
+
+    table td, table th {
+        text-align: center;
+        border: 1px solid #000;
+    }
+
+    table tbody tr:nth-child(odd) {
+        background-color: $primary-color;
+    }
+}
+
+.table-c .table-right {
+    width: 48%;
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: .5rem 0;
+        border: 1px solid #000;
+    }
+
+    table td, table th {
+        text-align: center;
+        border: 1px solid #000;
+    }
+
+    table tbody tr:nth-child(odd) {
+        background-color: $primary-color;
+    }
+}
+
+.table-n {
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: .5rem 0;
+        border: 1px solid #000;
+    }
+
+    table td, table th {
+        text-align: center;
+        border: 1px solid #000;
+    }
+
+    table tbody tr:nth-child(odd) {
+        background-color: $primary-color;
+    }
 }
