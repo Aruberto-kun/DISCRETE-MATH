@@ -50,8 +50,8 @@ function geometric(a, r, n) {
 function arithmetic(a, d, n) {
     let series_out = "";
     let temp_a = a;
-    if (n > 15) {
-        for(let b = 0; b < 15; b++) {
+    if (n > 10) {
+        for(let b = 0; b < 10; b++) {
             if (b < n-1) {
                 series_out += `${temp_a}, `
             } else {
