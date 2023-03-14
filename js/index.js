@@ -72,7 +72,19 @@ function arithmetic(a, d, n) {
     }
     return [ a + (n-1)*d, series_out]
 }
-//Truth Table
+//Existential Quantifier
+function ExistentialQuantifier(x, y) { 
+    for (const elementx of x) {
+        if (!y.some((yy) => yy + yy === x)) {
+            return false;
+        }
+    }
+    return true;
+}
+
+let x = [2, 4, 6, 7]
+let y = [1, 2, 3, 4]
+console.log(ExistentialQuantifier(x, y))
 
 
 // Recursive Algorithm

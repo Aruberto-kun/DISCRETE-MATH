@@ -65,6 +65,15 @@ body {
   font-size: 1.2rem;
   text-indent: 3rem;
 }
+.right-content .image-box {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  height: 520px;
+}
+.right-content .image-box img {
+  width: 48%;
+}
 
 .calc-content {
   margin: 2rem 0;
@@ -210,4 +219,4 @@ body {
 }
 .table-n table tbody tr:nth-child(odd) {
   background-color: #39A2DB;
-}
+}/*# sourceMappingURL=style.css.map */
